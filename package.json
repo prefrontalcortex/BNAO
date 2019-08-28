@@ -1,5 +1,5 @@
 {
-    "name": "com.fewers.bnao",
+    "name": "com.fewes.bnao",
     "author": "Fewers",
     "displayName": "BNAO",
     "description": "A tiny, GPU-based Bent Normal and Ambient Occlusion baker for Unity.",
