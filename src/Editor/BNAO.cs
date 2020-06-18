@@ -589,7 +589,7 @@ public class BNAO : EditorWindow {
 			EditorUtility.DisplayProgressBar (progressTitle, "Saving texture(s)...", (float) u / bnaoObjects.Count);
 			var names = new List<string> ();
 			foreach (var renderedMesh in bnaoObject.Value.renderedMeshes)
-				names.Add (renderedMesh.renderer.name);
+				names.Add((renderedMesh.renderer.transform.parent ? renderedMesh.renderer.transform.parent.name + "_" : "") + renderedMesh.renderer.name);
 			switch (nameMode) {
 				case NameMode.Shortest:
 					names = names.OrderBy (x => x.Length).ToList<string> ();
