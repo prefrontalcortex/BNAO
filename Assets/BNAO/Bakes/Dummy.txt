@@ -1,1 +1,0 @@
-This file is only here to prevent git from removing the Bakes directory.
